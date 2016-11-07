@@ -8,7 +8,7 @@ app = Flask(__name__)
 app.secret_key = '1234'
 
 Database.initialise(host='localhost', database='learning2', user='postgres', password='1234')
-
+#DAN WAS HERE
 
 @app.before_request
 def load_user():
