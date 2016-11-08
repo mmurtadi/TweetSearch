@@ -2,13 +2,9 @@ import requests
 from flask import Flask, render_template, session, redirect, request, url_for, g
 from twitter_utils import get_request_token, get_oauth_verifier_url, get_access_token
 from user import User
-from database import Database
 
 app = Flask(__name__)
 app.secret_key = '1234'
-
-Database.initialise(host='localhost', database='learning2', user='postgres', password='1234')
-#DAN WAS HERE
 
 @app.before_request
 def load_user():

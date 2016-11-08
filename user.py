@@ -1,8 +1,9 @@
-from database import CursorFromConnectionFromPool
+from database import CursorFromConnectionFromPool, Database
 import oauth2
 import json
 from twitter_utils import consumer
 
+Database.initialise(host='localhost', database='learning', user='mmurtadi', password='RedZone1')
 
 class User:
     def __init__(self, screen_name, oauth_token, oauth_token_secret, id):
