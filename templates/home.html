@@ -6,9 +6,12 @@
 </head>
 
 <body>
-    <h1>TweetSearch</h1>
-    <button type="button" class="btn btn-info">Log in with Twitter</button>
-    <a href="{{ url_for('twitter_login') }}">Log in with Twitter</a>
-
-</body>
+    <body>
+        <div class="container">
+          <div class="jumbotron">
+            <h1>Welcome to Tweet Search</h1>
+            <button><a href="{{ url_for('twitter_login') }}">Log in with Twitter</a></button>
+          </div>
+        </div>
+    </body>
 </html>
