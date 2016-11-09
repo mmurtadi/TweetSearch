@@ -2,7 +2,7 @@ from user import User
 from database import Database
 from twitter_utils import get_request_token, get_oauth_verifier, get_access_token
 
-Database.initialise(host='localhost', database='learning', user='postgres', password='RedZone1')
+Database.initialise(host='localhost', database='learning', user='mmurtadi', password='RedZone1')
 
 screen_name = input("What is your twitter name?: ")
 
